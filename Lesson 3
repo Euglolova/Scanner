@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main (String[] args ) {
+
+        Scanner k = new Scanner(System.in);
+        System.out.println ("Введіть 3 будь-яких цілих числа: ");
+        int a = k.nextInt();
+        int b = k.nextInt();
+        int c = k.nextInt();
+        if( a >= b && a >= c)
+            System.out.println(a + ": Найбільше число");
+
+        else if (b >= a && b >= c)
+            System.out.println(b + ": Найбільше число");
+
+        else
+            System.out.println(c + ": Найбільше число");
+    }
+}
